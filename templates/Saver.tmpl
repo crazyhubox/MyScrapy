@@ -1,0 +1,18 @@
+import myspider
+
+
+class ${projectname}Saver(myspider.Saver):
+    
+    def process_item(self,Item):
+        """
+        Solve the Item:
+            eg.
+                Save as csv,word,txt,json.
+        """
+        pass
+
+    def spider_closed(self):
+        """
+        if define this function,when the spider closed,it runs.
+        """
+        pass

@@ -1,0 +1,23 @@
+import myspider
+from ${project}.Saver import ${projectname}Saver
+
+class ${spidername}Spider(myspider.MySpy):
+    name = '${spidername}'
+    domain = '${domain}'
+    start_url = '${url}'
+    engine = myspider.Engine(${projectname}Saver())
+    
+    @engine.callback
+    def parse(self,Response):
+        """
+        items[one] = Response.css('.class #example').get()
+        items[two] = Response.css('.class #example').get()
+        items[three] = Response.css('.class #example').get()
+        return items
+        """
+        pass
+
+
+
+#if __name__ == "__main__":
+#    ${spidername}Spider().run_main()
